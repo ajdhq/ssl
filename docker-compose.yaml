@@ -6,7 +6,7 @@ services:
     restart: always
     environment:
       - PORT=8080
-      - KEY=./CA/rahulgharat.online/rahulgharat.online.decrypted.key
-      - CERT=./CA/rahulgharat.online/rahulgharat.online.crt
+      - KEY=./cert/CA/rahulgharat.online/rahulgharat.online.decrypted.key
+      - CERT=./cert/CA/rahulgharat.online/rahulgharat.online.crt
     ports:
       - 8080:8080
