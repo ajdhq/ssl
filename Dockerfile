@@ -8,7 +8,7 @@ COPY ./CA /app/CA
 
 RUN npm install
 
-ENV PORT 443
+ENV PORT 8080
 EXPOSE $PORT
 
 CMD [ "npm", "start" ]
