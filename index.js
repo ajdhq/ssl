@@ -1,6 +1,10 @@
 const fs = require('fs');
-const key = fs.readFileSync('./CA/localhost/localhost.decrypted.key');
-const cert = fs.readFileSync('./CA/localhost/localhost.crt');
+
+// const key = fs.readFileSync('./CA/localhost/localhost.decrypted.key');
+// const cert = fs.readFileSync('./CA/localhost/localhost.crt');
+
+const key = fs.readFileSync(process.env.KEY);
+const cert = fs.readFileSync(process.env.CRT);
 
 const express = require('express');
 const app = express();
