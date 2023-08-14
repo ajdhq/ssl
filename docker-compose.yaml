@@ -4,8 +4,11 @@ services:
     platform: linux/amd64
     container_name: ssl-app
     restart: always
+    environment:
+      - PORT=8080
     volumes:
       - ./certbot/www:/var/www/certbot/:ro
       - ./certbot/conf/:/etc/nginx/ssl/:ro
     ports:
-      - 8080:8080
+      - 80:8080
+      - 443:8080
