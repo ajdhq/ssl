@@ -9,4 +9,4 @@ services:
       - KEY=./cert/CA/rahulgharat.online/rahulgharat.online.decrypted.key
       - CERT=./cert/CA/rahulgharat.online/rahulgharat.online.crt
     ports:
-      - 8080:8080
+      - 443:8080

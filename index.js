@@ -10,6 +10,13 @@ app.get('/', (req, res, next) => {
   res.status(200).send('Hello world!');
 });
 
+app.get('/json', (req, res, next) => {
+  res.status(200).json({
+    success: true,
+    statusCode: 200
+  });
+});
+
 const https = require('https');
 const server = https.createServer({ key, cert }, app);
 
