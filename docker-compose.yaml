@@ -7,6 +7,6 @@ services:
     environment:
       - PORT=8080
       - KEY=./CA/rahulgharat.online/rahulgharat.online.decrypted.key
-      - CRT=./CA/rahulgharat.online/rahulgharat.online.crt
+      - CERT=./CA/rahulgharat.online/rahulgharat.online.crt
     ports:
       - 8080:8080

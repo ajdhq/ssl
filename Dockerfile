@@ -5,6 +5,7 @@ WORKDIR /app
 COPY ./package.json /app
 COPY ./index.js /app
 COPY ./CA /app/CA
+COPY ./cert /app/cert
 
 RUN npm install
 
