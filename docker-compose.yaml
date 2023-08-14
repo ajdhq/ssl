@@ -6,11 +6,8 @@ services:
     restart: always
     environment:
       - PORT=8080
-      - KEY=/etc/nginx/ssl/live/rahulgharat.online/fullchain.pem
-      - CRT=/etc/nginx/ssl/live/rahulgharat.online/privkey.pem
-    volumes:
-      - ./certbot/www:/var/www/certbot/:ro
-      - ./certbot/conf/:/etc/nginx/ssl/:ro
+      - KEY=./CA/rahulgharat.online/rahulgharat.online.decrypted.key
+      - CRT=./CA/rahulgharat.online/rahulgharat.online.crt
     ports:
       - 8080:8080
 
